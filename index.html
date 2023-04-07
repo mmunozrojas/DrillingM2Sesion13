@@ -24,13 +24,70 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Nuestros productos</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#carouselModal">Sobre nosotros</a></li>
                     <li class="nav-item"><a id="com-link" class="nav-link" href="#com-form">Comuniquemonos</a></li>
                     <li class="nav-item"><a id="res-link" class="nav-link" href="#res-form">Reserva</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Carrusel Modal -->
+    <div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="carouselModalLabel"></h5>
+                    <button type="button" class="btn-close text-light" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="text-center">
+                                    <h5>Nimrodel Pub Restaurant</h5>
+                                    <p>“Nimrodel Significa “dama de la cueva blanca”. Fue una elfa silvana que vivió
+                                        durante la Tercera Edad del Sol en el bosque de Lothlórien. En honor a su
+                                        nombre, se acuña
+                                        Nimrodel al río que nace en las Montañas Nubladas”.</p>
+                                </div>
+                                <img src="assets/img/IMG2.jpg" class="d-block w-100" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item text-center">
+                                <p>“Nimrodel Pub Restaurant es un oasis de calma y diversión, lleno de rincones
+                                    acogedores
+                                    en donde se resalta la belleza de su decoración élfica.
+                                    Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos,
+                                    terminar
+                                    el día después del trabajo o almorzar con tu familia.
+                                    Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han
+                                    otorgado reconocimiento dentro de la cultura gastronómica.
+                                    También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te
+                                    llevarán a un mágico mundo.”</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/IMG1.jpg" class="d-block w-100" alt="Slide 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!--header-->
     <header class="container">
         <h1 class="display-1 text-center pt-4 my-header"><strong>Nimrodel Pub Restaurant</strong></h1>
@@ -212,15 +269,18 @@
             </button>
             <hr>
             <img class="img-fluid" id="image" src="" alt="">
-    <div class="info">
-      <h2 id="title"></h2>
-      <p id="description"></p>
-    </div>
-  </div>
-  <div class="modal-backdrop"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+            <div class="info">
+                <h2 id="title"></h2>
+                <p id="description"></p>
+            </div>
+        </div>
+        <div class="modal-backdrop"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>

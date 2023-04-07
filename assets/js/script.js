@@ -14,7 +14,7 @@ rLink.addEventListener("click", function (event) {
   rform.scrollIntoView({ behavior: 'smooth' });
 });
 
-$('#com-form').submit(function(event) {
+$('#com-form').submit(function (event) {
   const nombre = $('#nombre').val();
   const telefono = $('#telefono').val();
   const correo = $('#correo').val();
@@ -55,8 +55,8 @@ $('#com-form').submit(function(event) {
 });
 
 
-$(document).ready(function() {
-  $("#res-form").submit(function(event) {
+$(document).ready(function () {
+  $("#res-form").submit(function (event) {
     const nombre = $("#nombre-reserva").val();
     const correo = $("#correo-reserva").val();
     const telefono = $("#telefono-reserva").val();
@@ -71,53 +71,61 @@ $(document).ready(function() {
     console.log("Hora: ", hora);
     console.log("Asistentes: ", asistentes);
 
-  let missingFields = "";
+    let missingFields = "";
 
-  if (nombre === "") {
-    missingFields += "Nombre\n";
-  }
-  if (telefono === "") {
-    missingFields += "Teléfono\n";
-  }
-  if (correo === "") {
-    missingFields += "Correo\n";
-  }
-  if (fecha === "") {
-    missingFields += "Fecha\n";
-  }
-  if (hora === "") {
-    missingFields += "Hora\n";
-  }
-  if (asistentes === "") {
-    missingFields += "Asistentes\n";
-  }
+    if (nombre === "") {
+      missingFields += "Nombre\n";
+    }
+    if (telefono === "") {
+      missingFields += "Teléfono\n";
+    }
+    if (correo === "") {
+      missingFields += "Correo\n";
+    }
+    if (fecha === "") {
+      missingFields += "Fecha\n";
+    }
+    if (hora === "") {
+      missingFields += "Hora\n";
+    }
+    if (asistentes === "") {
+      missingFields += "Asistentes\n";
+    }
 
-  if (missingFields !== "") {
-    alert("Por favor complete los siguientes campos:\n\n" + missingFields);
-  } else {
-    alert("Gracias por reservar!");
-  }
-  
+    if (missingFields !== "") {
+      alert("Por favor complete los siguientes campos:\n\n" + missingFields);
+    } else {
+      alert("Gracias por reservar!");
+    }
 
-  event.preventDefault();
-});
+
+    event.preventDefault();
+  });
 })
 //document ready
-$(document).ready(function() {
-$("img").dblclick(function () {
-  var imgSrc = this.src;
-  var titulo = $(this).parent().find('h5').text();
-  var descripcion = $(this).parent().find('p').text();
-  $("#title").text(titulo);
-  $("#description").text(descripcion);
-  $("#image").attr('src', imgSrc);
-  $(".myModal").show('slow');
-});
+$(document).ready(function () {
+  $("img").dblclick(function () {
+    var imgSrc = this.src;
+    var titulo = $(this).parent().find('h5').text();
+    var descripcion = $(this).parent().find('p').text();
+    $("#title").text(titulo);
+    $("#description").text(descripcion);
+    $("#image").attr('src', imgSrc);
+    $(".myModal").show('slow');
+  });
 
-$("#modal_close").click(function () {
-  $(".myModal").hide('slow');
-});
+  $("#modal_close").click(function () {
+    $(".myModal").hide('slow');
+  });
 })
+
+var sobreNosotrosLink = document.querySelector('a[href="#sobre-nosotros"]');
+var carousel = document.getElementById('carouselExampleControls');
+
+sobreNosotrosLink.addEventListener('click', function (event) {
+  event.preventDefault();
+  carousel.classList.remove('d-none');
+});
 
 
 
