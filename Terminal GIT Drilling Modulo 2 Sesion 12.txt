@@ -1,0 +1,65 @@
+Elysium@DESKTOP-GKAVP4E MINGW64 /h/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills 
+Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling
+$ git init
+Initialized empty Git repository in H:/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling/.git/
+
+Elysium@DESKTOP-GKAVP4E MINGW64 /h/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills 
+Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling
+$ git add .
+fatal: detected dubious ownership in repository at 'H:/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling'
+'H:/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills Curso FrontEnd/Modulo 2/Módulo 
+2 Sesion 12 Drilling' is on a file system that does not record ownership
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory 'H:/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling'
+
+Elysium@DESKTOP-GKAVP4E MINGW64 /h/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills 
+Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling
+$ git config --global --add safe.directory 'H:/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling'
+
+Elysium@DESKTOP-GKAVP4E MINGW64 /h/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills 
+Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling (master)
+$ git add .
+warning: in the working copy of 'assets/css/style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+Elysium@DESKTOP-GKAVP4E MINGW64 /h/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills 
+Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling (master)
+$ git commit -m "Version inicial del proyecto"
+[master (root-commit) 224ca75] Version inicial del proyecto
+ 8 files changed, 441 insertions(+)
+ create mode 100644 assets/css/style.css
+ create mode 100644 assets/img/bebidas.jpg
+ create mode 100644 assets/img/fondo.jpg
+ create mode 100644 assets/img/n.png
+ create mode 100644 assets/img/shop.jpeg
+ create mode 100644 assets/img/tablas.jpg
+ create mode 100644 assets/js/script.js
+ create mode 100644 index.html
+
+Elysium@DESKTOP-GKAVP4E MINGW64 /h/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling (master)
+$ git add .
+warning: in the working copy of 'assets/css/style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+Elysium@DESKTOP-GKAVP4E MINGW64 /h/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling (master)
+$ git commit -m "Version 7 de Abril 2023 Proyecto"
+[master 7c588bd] Version 7 de Abril 2023 Proyecto
+ 5 files changed, 242 insertions(+), 131 deletions(-)
+ create mode 100644 assets/img/IMG1.jpg
+ create mode 100644 assets/img/IMG2.jpg
+
+Elysium@DESKTOP-GKAVP4E MINGW64 /h/2023/Curso Front End/Clases/Visual Studio Code/Rebound y Drills Curso FrontEnd/Modulo 2/Módulo 2 Sesion 12 Drilling (master)
+$ git log
+commit 7c588bd3b66134ae44889e0b80335fff82cee3ee (HEAD -> master)
+Author: Marco <marco.munoz.rojas@gmail.com>
+Date:   Fri Apr 7 12:02:16 2023 -0400
+
+    Version 7 de Abril 2023 Proyecto
+
+commit 224ca759474f6a2828ae3f7dea66f114b6d5daa4
+Author: Marco <marco.munoz.rojas@gmail.com>
+Date:   Fri Apr 7 11:56:48 2023 -0400
+
+    Version inicial del proyecto
+:
